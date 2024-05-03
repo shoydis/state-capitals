@@ -1,0 +1,118 @@
+ 
+.mainContainer{ 
+    padding-bottom: 40px;
+}
+.list { 
+    padding:0px 15px;
+    font-size: clamp(12px, calc(14.4vw* 100 / 1400), 14.4px)      
+}
+.list:hover{
+    background-color: black!important; 
+    color:white  ;
+    cursor: pointer;
+}
+.list.active{
+    background-color: black!important; 
+    color:white;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    white-space: nowrap;
+    font-size: 0.875em;
+    color: inherit;
+}
+
+h1{ 
+    font-size: 5.5em; 
+    display:block; 
+    width: 100%; 
+    border-bottom: 1px solid black; 
+    margin-bottom: 25px;
+    padding:0px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img { 
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px; 
+}
+
+.callOut{
+    border-right: 1px solid black;
+}
+
+.StateCapitalsComponant{
+    border-top: 1px solid black;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.input-lable{ width: calc(100% - 85px); }
+.input-field{ width: 100%; }
+.input-button{ width: 85px; }
+.correct{
+    color: green;
+    font-weight: bold;
+}
+.incorrect strong{
+    color: red;
+}
+.next-question{
+    border: 1px solid black; 
+    padding: 1% 15%;
+}
+.score-area{
+    border-left: 1px solid black;
+    padding: 0px 40px;
+}
+.test{    
+    border-left: 1px solid black;
+    padding-left: 15px;
+}
+
+.score{
+    margin-bottom: 10px;
+}
+
+.fav-state{
+    text-transform: capitalize;
+}
+
+.required{
+    color: red;
+}
+
+@media screen and (max-width: 992px) {
+    .header > div {
+        padding:0;
+    }
+
+    h1{ 
+        font-size: 2.5em;  
+    }
+ 
+    .callOut{
+        padding: 10px;
+        border: 1px solid black;
+        margin-bottom: 25px;
+    }
+    
+    .test{ 
+        border-left: 0px solid black;
+        border-top: 1px solid black;
+        padding: 12px 12px 0px 12px ;
+        margin: 10px 0px;
+    }
+    
+    .score-area{
+        border-left: 0px solid black; 
+        padding: 10px 0px 0px 0px ;
+        margin: 10px 12px 0px 12px;
+    }
+
+    .score{
+        margin-bottom: 0px;
+    }
+  }
